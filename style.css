@@ -3,8 +3,9 @@ body {
     font-family: "Work Sans", sans-serif; 
     /*background: #ce9bec;*/
     background-image: url(images/freepik__background__69714.png); /*Designed by Freepik*/
-    background-size: cover;
-    background-position: center; /* Center the image */    
+    /*background-size: cover;
+    background-position: center;  
+    */  
 }
 
 h1 {
@@ -188,7 +189,7 @@ footer.attribution {
 
     .question-3 .icon-toggle {
         position: relative;
-        left: 25px;
+        left: 23px;
     }
 
     .question-4 .icon-toggle {
@@ -204,7 +205,7 @@ footer.attribution {
 
     .question-2 .icon-minus {
         position: relative;
-        left: -25px;
+        left: -28px;
     }
 
     .question-3 .icon-minus {
