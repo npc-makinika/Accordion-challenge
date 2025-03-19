@@ -40,7 +40,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 Markup: Used to structure the content in a meaningful and accessible way.
-- Bootstrap 5.3.0: Leveraged for responsive design and pre-built components to ensure a consistent and professional layout.
+- Bootstrap 5.3.3: Leveraged for responsive design and pre-built components to ensure a consistent and professional layout.
 - CSS Custom Properties: Employed variables to maintain design consistency and facilitate easier updates and theming.
 - Flexbox: Utilized for flexible, efficient layout structures that adapt seamlessly across various screen sizes.
 - Mobile-First Workflow: Designed the interface with mobile users as the primary focus, then enhanced for larger screens.
