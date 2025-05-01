@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/andr-ch/Accordion-challenge.git](https://github.com/andr-ch/Accordion-challenge.git)
-- Live Site URL: [https://andr-ch.github.io/Accordion-challenge/](https://andr-ch.github.io/Accordion-challenge/)
+- Solution URL: [https://github.com/npc-makinika/Accordion-challenge.git](https://github.com/npc-makinika/Accordion-challenge.git)
+- Live Site URL: [https://npc-makinika.github.io/Accordion-challenge/](https://npc-makinika.github.io/Accordion-challenge/)
 
 ## My process
 
