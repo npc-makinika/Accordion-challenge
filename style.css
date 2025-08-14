@@ -1,222 +1,229 @@
-/* === Base Styles === */
+/* General fixes */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  background: linear-gradient(266deg, #7aa9d4, #acd8d9 70%, #c5e0e1);
+    font-family: "Work Sans", sans-serif; 
+    /*background: #ce9bec;*/
+    background-image: url(images/freepik__background__69714.png); /*Designed by Freepik*/
+    background-size: cover;
+    background-position: center;  
+     
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* === Typography & Header === */
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  top: 48px;
-}
-
-.heading {
-  color: #000000;
-  text-align: center;
-  font-weight: 200;
-}
-
-.text-1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.text-2 {
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* === Main Layout === */
-.container-fluid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 15px;
-  margin-top: 50px;
-}
-
-/* === Card Styling === */
-.card {
-  width: clamp(520px, 30vw, 355px);
-  min-height: 220px;
-  position: relative;
-  border: none;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-}
-
-.card:hover {
-    box-shadow: 10px 5px 5px rgb(0, 0, 0);
-    transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer; /* Pointer/hand icon */
+h1 {
+    color: hsl(292deg 80.43% 10%);
+    font-weight: 700;
+    text-align: center; /* Centers the header */
+    margin-right: 45%;  /* Adjust this to move the header to the left */
+    position: relative;
+    top: 16px;
 }
 
 
 
+/* Accordion container */
+.container {
+    background-color: aliceblue;
+    max-width: 564px;
+    margin: 13% auto 20px;
+    border-radius: 10px;
+    padding-bottom: 33px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+}
 
+/* Icon positioning */
+.icon-star {
+    padding: 0.5em;
+    position: relative;
+    left: 5%;
+    margin-top: -58px;
+    width: 50px;
+    height: 50px;
+}
 
+/* FAQ Styling */
 .text-area {
-  margin-top: 32px;
+    padding: 0 20px 0 20px;
 }
 
-.card-icon {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  width: 16%;
-  height: auto;
-  object-fit: cover;
+hr {
+    border: dotted hsl(292, 42%, 14%) 6px;
+    border-bottom: none;
+    width: 50%;
+    margin: 20px auto;
 }
 
-.card-title {
-  font-weight: 600;
-}
-
-.card-text {
-  color: #a79c9c;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-/* === Card Borders by Type === */
-.supervisor {
-  border-top: 4px solid teal;
-}
-
-.team-builder {
-  border-top: 4px solid #ff6b6b;
-}
-
-.karma {
-  border-top: 4px solid orange;
-}
-
-.calculator {
-  border-top: 4px solid #2196f3;
-}
-
-/* === Footer === */
-footer .attribution {
-  display: none;
-}
-
-/* === Responsive Styles (Mobile: ≤375px) === */
-@media (max-width: 375px) {
-  .card {
-    width: 100% !important;
-    margin: 16px 0;
-  }
-
-  .row > div {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  .container {
-    padding: 0 20px;
-  }
-
-  .supervisor,
-  .calculator {
-    margin-left: 0 !important;
-  }
-}
-
-/* === Tablet (768px - 991px) === */
-@media (min-width: 790px) and (max-width: 1440px) {
-  .card {
+/* Question styling */
+    /* Button styling */
+button {
+    border: none;
+    background-color: rgb(173 209 217);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
     width: 100%;
-    margin: 0%;
-  }
-
-  .row {
+    display: flex;
     justify-content: space-between;
-  }
+    align-items: center;
 }
 
-/* === Desktop (992px and up) === */
-@media (min-width: 992px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.btn-link {
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: -1px;
+    width: 100%;
+    margin-left: -13px;
 }
 
-@media  only screen and (min-width: 768px) and (max-width: 992px) {
-  .row {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    gap: 0 !important;
-  }
-
-  .col-12.col-lg-4 {
-    flex: 0 0 33.3333% !important;
-    max-width: 33.3333% !important;
-    display: flex !important;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-
-  .d-flex.flex-column.align-items-center.justify-content-between.gap-4 {
-    height: 100%;
-    justify-content: space-between !important;
-  }
-
-  .card {
-    width: 100% !important;
-    margin: 0 !important;
-  }
-
-  .team-builder,
-  .karma {
-    margin-bottom: 1.5rem;
-  }
-
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-
-  .supervisor,
-  .calculator {
-    margin-left: 0 !important;
-  }
-
-  .text-1 {
-    font-size: 2rem;
-  }
-
-  .text-2 {
-    font-size: 0.9rem;
-  }
+.btn-link:hover {
+    box-shadow: none;
+    color: #a82aef;
 }
-  
+
+    /* Icon Visibility */
+.icon-toggle {
+    display: inline-block;
+}
+
+/*
+.icon-plus, .icon-minus {
+    width: 24px;
+    height: 24px;
+}
+*/
+
+.icon-minus {
+    display: none;
+}
+
+.collapsed .icon-plus {
+    display: inline;
+}
+
+.collapsed .icon-minus {
+    display: none;
+}
+
+.btn-link:not(.collapsed) .icon-plus {
+    display: none;
+}
+
+.btn-link:not(.collapsed) .icon-minus {
+    display: inline;
+}
+
+    /* Special styling for Heading Four icons */
+.question-1 .icon-toggle{
+    position: relative;
+    left: 23px;
+}
+
+.question-2 .icon-toggle{
+    position: relative;
+    left: 125px;
+}
+
+.question-3 .icon-toggle{
+    position: relative;
+    left: 19px;
+}
+
+.question-4 .icon-toggle {
+    position: relative;
+    top: -12px; /* Adjust this to move the icon separately from the others */
+}
+
+.question-1 .icon-minus {
+    position: relative;
+    left: -23px;
+}
+
+.question-2 .icon-minus {
+    position: relative;
+    left: -124px;
+}
+
+.question-3 .icon-minus {
+    position: relative;
+    left: -18px;
+}
+    /*card-body styling */
+.card-body {
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+}
+
+
+/* Footer section */
+footer.attribution {
+    color: ghostwhite;
+    width: 100%;
+    padding: 20px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .attribution {
+        display: none;
+    }
+
+    .container {
+        max-width: 91%;
+    }
+
+    .text-area {
+        padding: 5px;
+    }
+
+
+    .question-2 .icon-toggle {
+        position: relative;
+        left: 51px;
+    }
+
+    .question-3 .icon-toggle {
+        position: relative;
+        left: 23px;
+    }
+
+    .question-4 .icon-toggle {
+        position: relative;
+        top: -12px;
+        left: 25px;
+    }
+
+    .question-1 .icon-minus {
+        position: relative;
+        left: 0px;
+    }
+
+    .question-2 .icon-minus {
+        position: relative;
+        left: -28px;
+    }
+
+    .question-3 .icon-minus {
+        position: relative;
+        left: -1px;
+    }
+
+    .icon-star {
+        padding: 0.5em;
+        position: relative;
+        left: 3%;
+        margin-top: -44px;
+        width: 44px;
+        height: 44px;
+    }
+
+    h1 {
+        color: hsl(292deg 80.43% 10%);
+        margin-right: 36%;
+    }
+}
